@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>
+    REGISTER
+</title>
+<style>
+@font-face
+{
+    font-family:myfont;
+    src: url(PatuaOne-Regular.woff);
+}
+* {
+  box-sizing: border-box;
+}
+.column{
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input::placeholder
+    {
+        font-family: myfont;
+    }
+input
+    {
+        font-family: myfont;
+    }
+.row .column a:hover
+    {
+        color: blue;
+    }
+</style>    
+</head>
+<body>
+<div class="row">
+  <div class="column" style="background-image: url(pexels-photo-1181352.jpeg); height: 100%; width: 60%;">
+  </div>
+  <div class="column" style="background-color:white; padding-top: 10%;">
+      <h1 style="padding: 0px; margin: 0px; font-family: myfont;">Register</h1>
+      <br>
+      <p style="padding: 0px; margin-bottom: 0px; margin-top: 0px; font-family: myfont; height: 40px; font-size: 20px;">Email address</p>
+      <input placeholder="ritwickbhargav80@gmail.com" type="email" style="width:80%; padding: 0px; margin-bottom: 0px; background-color: transparent; border-bottom-color: black; border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; height: 40px; height: 40px; font-size: 16px;">
+      <p style="padding: 0px; margin-bottom: 0px; font-family: myfont; height: 40px; font-size: 20px;">Password</p>
+      <input placeholder="Enter your Password here" type="password" style="width:80%; padding: 0px; margin-bottom: 10px; background-color: transparent; border-bottom-color: black; border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; height: 40px; font-size: 16px;">
+      <br>
+      <a href="#" style="font-family: myfont; height: 40px; font-size: 16px; text-decoration: none; color: darkgrey;">Already registered? Login here</a>
+      <br>
+      <br>
+      
+      <input type="button" value="Submit" style="width: 100px; height:40px; background-color: white; font-size: 16px; border-radius: 8px;">
+  </div>
+</div>
+</body>
+</html>
