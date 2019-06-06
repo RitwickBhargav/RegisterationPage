@@ -1,61 +1,145 @@
-<html>
-<head>
-<title>
-    REGISTER
-</title>
-<style>
-@font-face
-{
-    font-family:myfont;
-    src: url(PatuaOne-Regular.woff);
-}
-* {
-  box-sizing: border-box;
-}
-.column{
-  float: left;
-  width: 40%;
-  padding: 10px;
-  height: 300px;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-input::placeholder
-    {
-        font-family: myfont;
-    }
-input
-    {
-        font-family: myfont;
-    }
-.row .column a:hover
-    {
-        color: blue;
-    }
-</style>    
-</head>
-<body>
-<div class="row">
-  <div class="column" style="background-image: url(pexels-photo-1181352.jpeg); height: 100%; width: 60%;">
-  </div>
-  <div class="column" style="background-color:white; padding-top: 10%;">
-      <h1 style="padding: 0px; margin: 0px; font-family: myfont;">Register</h1>
-      <br>
-      <p style="padding: 0px; margin-bottom: 0px; margin-top: 0px; font-family: myfont; height: 40px; font-size: 20px;">Email address</p>
-      <input placeholder="ritwickbhargav80@gmail.com" type="email" style="width:80%; padding: 0px; margin-bottom: 0px; background-color: transparent; border-bottom-color: black; border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; height: 40px; height: 40px; font-size: 16px;">
-      <p style="padding: 0px; margin-bottom: 0px; font-family: myfont; height: 40px; font-size: 20px;">Password</p>
-      <input placeholder="Enter your Password here" type="password" style="width:80%; padding: 0px; margin-bottom: 10px; background-color: transparent; border-bottom-color: black; border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; height: 40px; font-size: 16px;">
-      <br>
-      <a href="#" style="font-family: myfont; height: 40px; font-size: 16px; text-decoration: none; color: darkgrey;">Already registered? Login here</a>
-      <br>
-      <br>
-      
-      <input type="button" value="Submit" style="width: 100px; height:40px; background-color: white; font-size: 16px; border-radius: 8px;">
-  </div>
-</div>
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+    <style>
+      a:hover
+      {
+        background: rgb(245, 244, 244);
+        border-radius: 5px;
+      }
+      input::placeholder, option
+      {
+        color:rgb(165, 165, 165) ;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 80%;
+      }
+    </style>
+    <title>DSC</title>
+  </head>
+  <body style="background-image: url(bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <!--img class="img-responsive" src="bg.jpg" style="height: 100%; width: 100%;" /-->
+      <nav class="navbar fixed-top navbar-expand-md custom-navbar navbar-dark text-center" style="background: white; padding: 5px;">
+          <img class="navbar-brand" src=".\giphy1.gif" id="logo_custom" width="7%"  alt="logo" style="margin-right: 2%; padding: 0px;">
+          <h3 class="text-center" style="font-family: 'Montserrat', sans-serif; padding-top: 5px;">DSCKIET</h3>
+             <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border-color: black;">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+               <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+                   <ul class="navbar-nav ml-auto text-center">
+                     <li class="nav-item">
+                       <a class="nav-link" href="https://dsckiet.tech/" style="color: black; font-family: 'Montserrat', sans-serif; padding-top: 5px; background: rgb(245, 244, 244); border-radius: 5px;">Home</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="https://dsckiet.tech/events" style="color: black; font-family: 'Montserrat', sans-serif; padding-top: 5px;">Events</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="https://dsckiet.tech/team" style="color: black; font-family: 'Montserrat', sans-serif; padding-top: 5px;">Team</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="https://dsckiet.tech/about" style="color: black; font-family: 'Montserrat', sans-serif; padding-top: 5px;">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://dsckiet.tech/ideas" style="color: black; font-family: 'Montserrat', sans-serif; padding-top: 5px;">Ideas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://dsckiet.tech/#contact" style="color: black; font-family: 'Montserrat', sans-serif; padding-top: 5px;">Contact</a>
+                      </li>  
+                   </ul>
+               </div>  
+        </nav>
+        <!--div class="container" style="width: 100%; height: 100%; padding: 25%; ">
+            <div class="row">
+              <div class="col">
+                One of three columns
+              </div>
+              <div class="col">
+                One of three columns
+              </div>
+            </div>
+          </div-->
+
+
+
+
+          <div class="container">
+            <div class="row justify-content-md-center" style="margin-top: 14%; margin-left:2%; width: 100%;">
+          <div class="col-sm-4 text-center"><img src="ezgif.com-crop.gif" style=" border-top-left-radius: 10px; border-bottom-left-radius: 10px;"></div>
+          <div class="col-sm-7 text-left" style="width: 27%; background:rgb(255, 255, 255); border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+            <img src="logo.jpg" style=" width: 20%; padding-top: 2%;"><b style="color: black; font-family: 'Montserrat', sans-serif; padding-left: 20px; font-size: 150%; font-weight: 500;">Developer Student Clubs</b><br>
+              <form>
+                  <div class="form-group">
+                    <br>
+                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;">Full Name:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ritwick Bhargav" style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Email Address:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ritwick.1610132@kiet.edu" style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                        </div>
+                        <div class="col">
+                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">University Roll No:</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1602910132" style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                        </div>
+                      </div>
+                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Github Link:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="https://github.com/RitwickBhargav/" style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">LinkedIn Link:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="https://www.linkedin.com/in/ritwickbhargav80/" style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black;padding: 0px; padding-bottom: 1%;" required>
+                    <div class="row">
+                        <div class="col">
+                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Year:</label>
+                            <div class="dropdownS">
+                                <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 40%;">
+                                    <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">1st Year</option>
+                                    <option value="saab" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">2nd Year</option>
+                                    <option value="opel" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">3rd Year</option>
+                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">4th Year</option>
+                                  </select>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <label for="exampleFormControlInput1" style="color: black; font-family: 'Montserrat', sans-serif; font-size: 90%; font-weight: 500; margin-bottom: 0px;  margin-top: 2%;">Branch:</label>
+                            <div class="dropdown">
+                                <select style="border-top-color: transparent; border-left-color: transparent; border-right-color: transparent; border-bottom-color: black; padding: 0px; padding-bottom: 1%; color:rgb(165, 165, 165); font-family: 'Montserrat', sans-serif; font-size: 88%; width: 40%;">
+                                    <option value="volvo" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">CSE</option>
+                                    <option value="saab" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">CSI</option>
+                                    <option value="opel" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">IT</option>
+                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">ECE</option>
+                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">EN</option>
+                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">EI</option>
+                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">CE</option>
+                                    <option value="audi" style="font-size: 100%; font-family: 'Montserrat', sans-serif;">ME</option>
+                                  </select>
+                              </div>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck" style="font-size: 100%; font-family: 'Montserrat', sans-serif; padding-top: 0px; font-size: 100%;">
+                              I accept to the <a href="https://dsckiet.tech/code-of-conduct">Code Of Conduct</a>
+                            </label>
+                          </div>
+                          <button type="submit" class="btn" style="margin-left: 40%;  background: #A7BFE8; font-family: 'Montserrat', sans-serif; padding-top: 5px; margin-top: 1%; font-size: 100%;">Submit</button>
+                      </div>
+                  </div>
+
+                </form>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
